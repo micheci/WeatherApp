@@ -17,7 +17,7 @@ function App() {
     
     fetch('https://dark-sky.p.rapidapi.com/44,-96?units=auto&lang=en', options)
       .then(response => response.json())
-      .then(response => console.log(response.currently))
+      .then(response => setData(response.currently))
       .catch(err => console.error(err));}
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function App() {
       <header className="App-header">
         <div className='card'>
           <h4>Location</h4>
-          <h2>{data.temperature}</h2>
+          <h1>{data.temperature}</h1>
           
           <div className='flex'>
           <p>{data.humidity}</p>
@@ -39,7 +39,7 @@ function App() {
           <p>{data.windSpeed}</p>
           </div>
 
-         
+         {Date.now() }
           <p>{data.time}</p>
           
         </div>
