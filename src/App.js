@@ -32,6 +32,7 @@ function App() {
       <header className="App-header">
         <div className='card'>
           <Search/>
+          
           {/* <h1>{data.temperature}</h1>
           
           <div className='flex'>
