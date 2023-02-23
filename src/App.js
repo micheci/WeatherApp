@@ -1,5 +1,6 @@
 import './App.css';
 import {useEffect,useState} from 'react'
+import Search from './pages/search';
 
 
 
@@ -30,10 +31,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='card'>
-          <h4>Location</h4>
-          <form className='searchBar'>
-            <input type='text' placeholder='Location'></input>
-          </form> 
+          <Search/>
           {/* <h1>{data.temperature}</h1>
           
           <div className='flex'>
