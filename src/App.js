@@ -1,6 +1,7 @@
 import './App.css';
 import {useEffect,useState} from 'react'
-import Search from './pages/search';
+import Search from './components/search';
+import Temp from './components/temp';
 
 
 
@@ -32,7 +33,7 @@ function App() {
       <header className="App-header">
         <div className='card'>
           <Search/>
-          
+          <Temp/>
           {/* <h1>{data.temperature}</h1>
           
           <div className='flex'>
